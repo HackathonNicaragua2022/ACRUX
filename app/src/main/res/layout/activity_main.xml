@@ -4,66 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/fondoiniciosesion"
 
-    android:background="@drawable/fondoiniciosesion">
+    tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="302dp"
-        android:layout_height="73dp"
-        android:background="#20000000"
-
-        android:color="#42E1A3A3"
-        android:drawableLeft="@drawable/user"
-        android:elevation="15dp"
-        android:radius="50dp"
-
-        android:text="Nombre de usuario"
-        android:textColor="#000000"
-        android:visibility="visible"
-        app:iconTint="#6AC54242"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#1E1D1D"
-        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="302dp"
-        android:layout_height="73dp"
-        android:background="#20090808"
-
-        android:drawableLeft="@drawable/key"
-        android:elevation="5dp"
-
-        android:text="Correo Contraseña"
-        app:iconTint="#6AF6DBDB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="302dp"
-        android:layout_height="73dp"
-        android:background="#21000000"
-
-        android:drawableLeft="@drawable/google"
-        android:elevation="5dp"
-
-        android:text="Correo electronico"
-        app:iconTint="#6AF6DBDB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -87,4 +31,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <EditText
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="E-MAIL"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="CONTRASEÑA"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/singbotton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Registrar" />
+
+            <Button
+                android:id="@+id/accederbotton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ACCEDER" />
+        </LinearLayout>
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

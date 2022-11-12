@@ -20,5 +20,6 @@ class MainActivity2bienvenida : AppCompatActivity() {
             startActivity(intent)
         }
         //para cambiar la pantalla del login a la bienvenida 2
+
     }
 }
