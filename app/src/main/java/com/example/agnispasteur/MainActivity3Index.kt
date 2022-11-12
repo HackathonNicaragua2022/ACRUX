@@ -1,19 +1,10 @@
 package com.example.agnispasteur
 
-import android.content.ContentProvider
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Email
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
-enum class ProviderType{
-    BASIC
-}
-
-@Suppress("UNREACHABLE_CODE")
 class MainActivity3Index : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,7 +48,6 @@ class MainActivity3Index : AppCompatActivity() {
             val intent6 = Intent(this, MainActivityTemperatura :: class.java )
             startActivity(intent6)
         }
-
     }
 
 }

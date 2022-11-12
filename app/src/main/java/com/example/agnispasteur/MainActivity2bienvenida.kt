@@ -13,13 +13,13 @@ class MainActivity2bienvenida : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_activity2bienvenida)
 
-        //para cambiar la pantalla del login a la bienvenida 2
+        //para cambiar la pantalla del login al index
         val btn: Button =  findViewById(R.id.btnsiguientebienvenida)
         btn.setOnClickListener{
             val intent= Intent(this, MainActivity3Index :: class.java )
             startActivity(intent)
         }
-        //para cambiar la pantalla del login a la bienvenida 2
+        //para cambiar la pantalla del login al index
 
     }
 }
