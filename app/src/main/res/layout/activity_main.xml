@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/fondoiniciosesion">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="302dp"
+        android:layout_height="73dp"
+        android:background="#20000000"
+
+        android:color="#42E1A3A3"
+        android:drawableLeft="@drawable/user"
+        android:elevation="15dp"
+        android:radius="50dp"
+
+        android:text="Nombre de usuario"
+        android:textColor="#000000"
+        android:visibility="visible"
+        app:iconTint="#6AC54242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#1E1D1D"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="302dp"
+        android:layout_height="73dp"
+        android:background="#20090808"
+
+        android:drawableLeft="@drawable/key"
+        android:elevation="5dp"
+
+        android:text="Correo Contraseña"
+        app:iconTint="#6AF6DBDB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="302dp"
+        android:layout_height="73dp"
+        android:background="#21000000"
+
+        android:drawableLeft="@drawable/google"
+        android:elevation="5dp"
+
+        android:text="Correo electronico"
+        app:iconTint="#6AF6DBDB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnSIGUIENTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+</androidx.constraintlayout.widget.ConstraintLayout>
